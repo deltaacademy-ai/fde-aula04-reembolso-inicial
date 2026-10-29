@@ -1,0 +1,29 @@
+{
+  "name": "fde-aula04-reembolso",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "reset": "bun run src/api/reset.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "anatomia": "bun run src/00-anatomia.ts",
+    "cp1": "bun run src/01-chamada-unica.ts",
+    "cp2": "bun run src/02-workflow.ts",
+    "cp3": "bun run src/03-agente-leitura.ts",
+    "cp4": "bun run src/04-autoridade.ts",
+    "aprovar": "bun run src/aprovar.ts",
+    "cp5": "bun run src/05-falha.ts",
+    "cp6": "bun run src/06-injecao.ts",
+    "mcp": "bun run src/mcp-server.ts",
+    "cp7": "bun run src/07-testar-mcp.ts",
+    "eval": "bun run evals/run.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "typescript": "^7.0.2"
+  }
+}
